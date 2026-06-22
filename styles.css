@@ -73,7 +73,7 @@ a{ color:inherit; }
 }
 
 .section p{ font-size:15px; }
-.lead{ max-width:680px; margin:0 auto; text-align:center; }
+.lead{ text-align:left; }
 .lead + .lead{ margin-top:16px; }
 
 /* MEMBROS */
@@ -90,8 +90,8 @@ a{ color:inherit; }
 .m-photo-soon{ width:95%; max-width:none; margin:0 auto; aspect-ratio:3/4; border:3px solid var(--cream); box-shadow:4px 4px 0 rgba(0,0,0,.4);
   background:var(--plum); color:var(--purple); display:flex; align-items:center; justify-content:center;
   text-align:center; font-family:'Playfair Display',Georgia,serif; font-size:clamp(18px,2.4vw,24px); line-height:1.05; }
-.m-name{ display:inline-block; background:var(--purple); color:var(--ink); font-size:17px; padding:3px 10px; margin-top:12px; }
-.m-role{ display:inline-block; background:var(--green); color:var(--ink); font-size:12px; font-weight:700; padding:3px 10px; margin:6px 0 8px; letter-spacing:.5px; }
+.m-name{ display:inline-flex; align-items:center; min-height:32px; background:var(--purple); color:var(--ink); font-size:16px; padding:0 12px; margin-top:12px; }
+.m-role{ display:inline-flex; align-items:center; min-height:32px; background:var(--green); color:var(--ink); font-size:12px; font-weight:700; padding:0 12px; margin:6px 0 8px; letter-spacing:.5px; }
 .m-bio{ font-size:13px; line-height:1.55; color:#cfc6dc; }
 .m-credit{ text-align:center; margin-top:30px; font-size:12px; color:#8c83a0; letter-spacing:.5px; }
 

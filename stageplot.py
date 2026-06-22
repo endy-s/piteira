@@ -72,10 +72,10 @@ def drumkit(cx, cy, num):
     return "".join(s)
 
 # ===== posicionamento =====
-cx_gsolo = STAGE_X + 150
+cx_gsolo = STAGE_X + 790
 cx_baixo = STAGE_X + 360
 cx_drums = STAGE_X + 560
-cx_gbase = STAGE_X + 790
+cx_gbase = STAGE_X + 150
 
 y_back  = STAGE_Y + 70    # amps / bateria
 y_mid   = STAGE_Y + 250   # músicos

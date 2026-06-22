@@ -85,8 +85,8 @@ a{ color:inherit; }
   .member:nth-child(2){ order:-1; } }
 .m-photo-link{ display:block; width:95%; margin:0 auto; cursor:pointer; }
 .member img{ width:100%; max-width:none; margin:0 auto; aspect-ratio:1/1; object-fit:cover;
-  border:3px solid var(--green); transition:transform .18s; }
-.m-photo-link:hover img{ transform:translateY(-4px); }
+  box-shadow:8px 8px 0 var(--green); transition:transform .18s, box-shadow .18s; }
+.m-photo-link:hover img{ transform:translate(-3px,-3px); box-shadow:11px 11px 0 var(--green); }
 .m-photo-soon{ width:95%; max-width:none; margin:0 auto; aspect-ratio:3/4; border:3px solid var(--cream); box-shadow:4px 4px 0 rgba(0,0,0,.4);
   background:var(--plum); color:var(--purple); display:flex; align-items:center; justify-content:center;
   text-align:center; font-family:'Playfair Display',Georgia,serif; font-size:clamp(18px,2.4vw,24px); line-height:1.05; }

@@ -67,35 +67,38 @@ def drumkit(cx, cy, num):
     s.append(f'<circle cx="{cx+50}" cy="{cy-30}" r="19" fill="none" stroke="{CREAM}" stroke-width="1.5"/>')
     s.append(f'<circle cx="{cx-58}" cy="{cy+8}" r="12" fill="none" stroke="{CREAM}" stroke-width="1.5"/>')
     s.append(f'<text x="{cx}" y="{cy+62}" text-anchor="middle" font-size="12" font-weight="bold" fill="{CREAM}">BATERIA</text>')
-    s.append(numbadge(cx+90, cy-40, "5-8"))
+    s.append(numbadge(cx+90, cy-40, num))
     s.append('</g>')
     return "".join(s)
 
 # ===== posicionamento =====
-cx_gsolo = STAGE_X + 160
+cx_gsolo = STAGE_X + 150
 cx_baixo = STAGE_X + 360
 cx_drums = STAGE_X + 560
-cx_gbase = STAGE_X + 770
+cx_gbase = STAGE_X + 790
 
-y_back  = STAGE_Y + 70    # amps
+y_back  = STAGE_Y + 70    # amps / bateria
 y_mid   = STAGE_Y + 250   # músicos
 y_front = STAGE_Y + 440   # mics
 
 content=[]
 # amps no fundo
-content.append(amp(cx_gsolo-42, y_back, "Guitarra Solo", 2))
-content.append(amp(cx_baixo-42, y_back, "Baixo", 4))
-content.append(amp(cx_gbase-42, y_back, "Guitarra Base", 3))
+content.append(amp(cx_gsolo-42, y_back, "Guitarra Solo", 5))
+content.append(amp(cx_baixo-42, y_back, "Baixo", 7))
+content.append(amp(cx_gbase-42, y_back, "Guitarra Base", 6))
 # bateria (centro, fundo)
-content.append(drumkit(cx_drums, y_back+30, "5-8"))
+content.append(drumkit(cx_drums, y_back+30, 8))
 # músicos linha do meio
 content.append(musician(cx_gsolo, y_mid, "GUIT.", "solo"))
 content.append(musician(cx_baixo, y_mid, "BAIXO", ""))
 content.append(musician(cx_gbase, y_mid, "GUIT.", "base"))
 # vocal à frente, centro
 content.append(musician(cx_drums, y_mid+130, "VOCAL", "à frente do palco"))
-# mic vocal frente
-content.append(micstand(cx_drums, y_front, "Mic vocal", 1))
+# mics (4): vocal + 3 backings (baixo não tem mic)
+content.append(micstand(cx_drums, y_front+10, "Mic vocal", 1))
+content.append(micstand(cx_gsolo, y_front, "Backing — guit. solo", 2))
+content.append(micstand(cx_gbase, y_front, "Backing — guit. base", 3))
+content.append(micstand(cx_drums-115, y_back+6, "Backing — bateria", 4))
 
 svg.extend(content)
 

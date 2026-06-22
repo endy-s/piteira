@@ -22,7 +22,7 @@ a{ color:inherit; }
 
 /* NAV */
 .nav{ position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between;
-  background:rgba(11,10,13,.94); backdrop-filter:blur(6px); padding:18px 22px; border-bottom:2px solid var(--purple); }
+  background:rgba(11,10,13,.94); backdrop-filter:blur(6px); padding:18px 22px; }
 .nav-brand{ display:flex; align-items:center; text-decoration:none; }
 .nav-logo{ height:30px; width:auto; display:block; }
 .nav-links{ display:flex; gap:18px; }
@@ -83,10 +83,10 @@ a{ color:inherit; }
 @media (max-width:480px){ .members-grid{ gap:30px; } .member{ width:100%; max-width:340px; }
   /* mobile one-by-one order: Vocal (Fernanda) first */
   .member:nth-child(2){ order:-1; } }
-.m-photo-link{ display:block; width:82%; max-width:230px; margin:0 auto; cursor:pointer; }
-.member img{ width:100%; max-width:none; margin:0 auto; aspect-ratio:1/1; object-fit:cover; border-radius:50%;
-  border:3px solid var(--cream); box-shadow:0 0 0 6px rgba(140,250,140,.22); transition:transform .18s, box-shadow .18s; }
-.m-photo-link:hover img{ transform:translateY(-4px); box-shadow:0 0 0 9px rgba(140,250,140,.42); }
+.m-photo-link{ display:block; width:95%; margin:0 auto; cursor:pointer; }
+.member img{ width:100%; max-width:none; margin:0 auto; aspect-ratio:1/1; object-fit:cover;
+  border:3px solid var(--green); transition:transform .18s; }
+.m-photo-link:hover img{ transform:translateY(-4px); }
 .m-photo-soon{ width:95%; max-width:none; margin:0 auto; aspect-ratio:3/4; border:3px solid var(--cream); box-shadow:4px 4px 0 rgba(0,0,0,.4);
   background:var(--plum); color:var(--purple); display:flex; align-items:center; justify-content:center;
   text-align:center; font-family:'Playfair Display',Georgia,serif; font-size:clamp(18px,2.4vw,24px); line-height:1.05; }
@@ -97,14 +97,7 @@ a{ color:inherit; }
 
 /* REPERTÓRIO & SOM */
 .song{ color:var(--purple); font-weight:700; }
-.setlist{ list-style:none; columns:2; column-gap:30px; max-width:680px; margin:26px auto 0; padding:0; }
-.setlist li{ padding:6px 0; border-bottom:1px solid rgba(202,136,241,.18); font-size:14px; break-inside:avoid; }
-.setlist li::before{ content:"♪ "; color:var(--green); }
-@media (max-width:560px){ .setlist{ columns:1; } }
-.spotify-wrap{ margin:30px auto 0; max-width:720px; }
-.spotify-slot{ margin:26px auto 0; max-width:560px; padding:18px; border:1px dashed var(--purple); border-radius:8px;
-  text-align:center; color:var(--cream); font-size:14px; }
-.spotify-slot strong{ color:var(--green); }
+.spotify-wrap{ margin:30px auto 0; max-width:600px; }
 .btn-center{ display:block; width:max-content; max-width:100%; margin-left:auto; margin-right:auto; }
 
 /* AO VIVO */

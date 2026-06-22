@@ -14,4 +14,4 @@ Sem build — basta salvar.
 
 ## Marca
 - Cores (`:root`): `--purple:#CA88F1` · `--green:#8cfa8c` · `--ink:#0b0a0d` · `--cream:#f3eef7` · `--plum:#1c1022`.
-- Fontes: Playfair Display (títulos) + JetBrains Mono (corpo). Nome da banda = logo (imagem).
+- Fontes: Playfair Display (títulos) + Inter (corpo). Nome da banda = logo (imagem).

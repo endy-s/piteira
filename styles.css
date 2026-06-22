@@ -97,7 +97,7 @@ a{ color:inherit; }
 
 /* REPERTÓRIO & SOM */
 .song{ color:var(--purple); font-weight:700; }
-.spotify-wrap{ margin:30px auto 0; max-width:520px; }
+.spotify-wrap{ margin:30px auto 0; max-width:720px; }
 .btn-center{ display:block; width:max-content; max-width:100%; margin-left:auto; margin-right:auto; }
 
 /* AO VIVO */

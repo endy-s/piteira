@@ -78,12 +78,12 @@ a{ color:inherit; }
 
 /* MEMBROS */
 .members-grid{ display:flex; flex-wrap:wrap; justify-content:center; gap:44px 42px; }
-.member{ width:calc(33.333% - 28px); max-width:300px; text-align:center; }
+.member{ width:calc(33.333% - 28px); max-width:300px; text-align:left; }
 @media (max-width:780px){ .member{ width:calc(50% - 22px); max-width:360px; } }
 @media (max-width:480px){ .members-grid{ gap:30px; } .member{ width:100%; max-width:340px; }
   /* mobile one-by-one order: Vocal (Fernanda) first */
   .member:nth-child(2){ order:-1; } }
-.m-photo-link{ display:block; width:95%; margin:0 auto; cursor:pointer; }
+.m-photo-link{ display:block; width:95%; cursor:pointer; }
 .member img{ width:100%; max-width:none; margin:0 auto; aspect-ratio:1/1; object-fit:cover;
   box-shadow:8px 8px 0 var(--purple); transition:transform .18s, box-shadow .18s; }
 .m-photo-link:hover img{ transform:translate(-3px,-3px); box-shadow:11px 11px 0 var(--purple); }
@@ -92,7 +92,7 @@ a{ color:inherit; }
   text-align:center; font-family:'Playfair Display',Georgia,serif; font-size:clamp(18px,2.4vw,24px); line-height:1.05; }
 .m-name{ display:inline-flex; align-items:center; min-height:32px; background:var(--purple); color:var(--ink); font-size:16px; padding:0 12px; margin-top:12px; }
 .m-role{ display:inline-flex; align-items:center; min-height:32px; background:var(--green); color:var(--ink); font-size:12px; font-weight:700; padding:0 12px; margin:6px 0 8px; letter-spacing:.5px; }
-.m-bio{ font-size:13px; line-height:1.55; color:#cfc6dc; }
+.m-bio{ font-family:'Inter',sans-serif; font-size:13px; line-height:1.55; color:#cfc6dc; }
 .m-credit{ text-align:center; margin-top:30px; font-size:12px; color:#8c83a0; letter-spacing:.5px; }
 
 /* REPERTÓRIO & SOM */

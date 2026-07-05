@@ -12,6 +12,16 @@ links.querySelectorAll('a').forEach(a =>
   })
 );
 
+// Logo roxa enquanto o hero está sob a nav
+const hero = document.getElementById('hero');
+const nav = document.querySelector('.nav');
+if (hero && nav && 'IntersectionObserver' in window) {
+  new IntersectionObserver(([e]) =>
+    nav.classList.toggle('on-hero', e.isIntersecting),
+    { rootMargin: '-66px 0px 0px 0px' }
+  ).observe(hero);
+}
+
 // Logo → scroll to the very top (sticky header + scroll-padding make #top fall short)
 const navBrand = document.querySelector('.nav-brand');
 if (navBrand) navBrand.addEventListener('click', e => {

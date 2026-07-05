@@ -118,6 +118,7 @@ a{ color:inherit; }
   color:var(--purple); text-decoration:underline; letter-spacing:.5px; font-weight:700;
   transition:transform .15s, filter .15s; }
 .rider-link:hover{ filter:brightness(1.25); transform:scale(1.03); }
+.rider-link + .rider-link{ margin-top:10px; }
 .plot{ margin:18px auto 0; max-width:760px; }
 .plot-img{ width:100%; height:auto; border-radius:10px; display:block; border:3px solid var(--purple); background:var(--plum); }
 .sub-h{ font-size:14px; font-weight:700; margin:28px 0 8px; letter-spacing:1px; color:var(--cream); text-align:center; }

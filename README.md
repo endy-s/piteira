@@ -6,7 +6,16 @@ Estático, sem build. Audiência: produtores/contratantes + fãs. **PT-BR.**
 ## Editar
 Edite `index.html` (conteúdo), `styles.css` (visual) e `main.js` (menu/galeria).
 `stageplot.py` gera `assets/stageplot.svg`. `rider.html` é o rider técnico (não indexado, `/rider`).
+`presskit.html` é o press kit / material de divulgação (não indexado; logos ficam no Google Drive).
 Sem build — basta salvar.
+
+## TODO (decididos em 2026-07, aguardando material/ação)
+- **Vídeo ao vivo** — maior alavanca de conversão p/ contratantes. Aguardando a banda gravar de novo (troca de baixista em 2026-07).
+- **Fotos do novo baixista** — substituir as fotos/bio do Lucas quando houver material (manter Lucas até lá).
+- **Domínio próprio** (ex.: `piteira.com.br`, ~R$40/ano no Registro.br) — depois atualizar `og:url`, `og:image` e os URLs do JSON-LD em `index.html`.
+- **Depoimentos** — pedir 1 frase p/ Loud Fest, Haoma e Bar do Castelo; adicionar em "Ao Vivo" com faixa de números (shows/cidades).
+- **Agenda / próximos shows** — quando houver datas; fallback "últimos palcos" quando vazia.
+- **Painel Cloudflare (sem código)**: ativar *Web Analytics* e o *managed robots.txt* (bloqueia crawlers de IA; NÃO criar robots.txt no repo — o gerenciado da Cloudflare sobrescreve na borda).
 
 ## Pré-visualizar localmente
     python3 -m http.server 8000

@@ -29,6 +29,8 @@ a{ color:inherit; }
 .nav-links a{ color:var(--cream); text-decoration:none; font-size:13px; letter-spacing:1px; }
 .nav-links a:hover{ color:var(--green); }
 .nav-toggle{ display:none; background:none; border:none; color:var(--purple); font-size:24px; cursor:pointer; }
+.back-link{ color:var(--cream); text-decoration:none; font-size:13px; letter-spacing:1px; }
+.back-link:hover{ color:var(--green); }
 
 /* TICKER (letreiro no fim do hero) */
 .ticker{ position:absolute; left:0; right:0; bottom:0; z-index:2; overflow:hidden; background:var(--green); }
@@ -104,10 +106,15 @@ a{ color:inherit; }
 .m-bio{ font-family:'Inter',sans-serif; font-size:13px; line-height:1.55; color:#cfc6dc; }
 .m-credit{ text-align:center; margin-top:30px; font-size:12px; color:#8c83a0; letter-spacing:.5px; }
 
-/* REPERTÓRIO & SOM */
+/* REPERTÓRIO & SOM (grade completa na página /repertorio) */
 .song{ color:var(--purple); font-weight:700; }
-.setlist{ columns:4 200px; column-gap:22px; margin-top:30px; list-style:none; }
-.setlist li{ font-size:14px; padding:5px 0; border-bottom:1px solid #2a2233; color:#cfc6dc; break-inside:avoid; }
+.setlist{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:26px 22px; margin-top:30px; }
+.setlist-group ul{ list-style:none; }
+.setlist-album{ font-family:'Playfair Display',Georgia,serif; font-weight:400; color:var(--purple);
+  font-size:19px; line-height:1.2; margin-bottom:8px; }
+.setlist-year{ font-family:'Inter',sans-serif; font-size:11px; font-weight:700; color:#8c83a0; letter-spacing:1px; margin-left:6px; }
+.setlist li{ font-size:14px; padding:5px 0; border-bottom:1px solid #2a2233; color:#cfc6dc; }
+.setlist-note{ font-size:11px; color:#8c83a0; margin-left:6px; letter-spacing:.5px; }
 .set-format{ text-align:center; margin-top:26px; font-size:13px; color:var(--green); letter-spacing:.5px; }
 .spotify-wrap{ margin:30px auto 0; max-width:480px; }
 .btn-center{ display:block; width:max-content; max-width:100%; margin-left:auto; margin-right:auto; }

@@ -132,6 +132,17 @@ a{ color:inherit; }
 .stage-note b{ color:var(--cream); }
 .mode-tag{ display:inline-block; background:#000; color:var(--green); font-size:12px; font-weight:700; padding:5px 11px; border-radius:5px; letter-spacing:1px; }
 
+/* FAQ */
+.faq-list{ max-width:680px; margin:0 auto; }
+.faq-item{ border-bottom:1px solid #2a2233; }
+.faq-item summary{ cursor:pointer; font-weight:700; font-size:15px; padding:14px 4px; list-style:none;
+  display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.faq-item summary::-webkit-details-marker{ display:none; }
+.faq-item summary::after{ content:"+"; color:var(--purple); font-size:22px; font-weight:400; flex-shrink:0; line-height:1; }
+.faq-item[open] summary::after{ content:"–"; }
+.faq-item p{ padding:0 4px 14px; font-size:14px; color:#cfc6dc; }
+.faq-item a{ color:var(--purple); }
+
 /* CONTATO */
 .contact-list{ display:grid; grid-template-columns:repeat(2,max-content); justify-content:center;
   gap:16px 44px; text-align:left; margin-top:8px; }

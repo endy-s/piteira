@@ -9,9 +9,11 @@ Edite `index.html` (conteúdo), `styles.css` (visual) e `main.js` (menu/galeria)
 `presskit.html` é o press kit / material de divulgação (não indexado; logos ficam no Google Drive).
 Sem build — basta salvar.
 
+**Crédito de fotos:** as fotos originais dos membros são de @manufaverofoto; a do Pedro e as próximas são de @joao_azuos.
+Ao trocar/adicionar fotos, manter o `.m-credit` (seção "Membros") de acordo.
+
 ## TODO (decididos em 2026-07, aguardando material/ação)
 - **Vídeo ao vivo** — maior alavanca de conversão p/ contratantes. Aguardando a banda gravar de novo (troca de baixista em 2026-07).
-- **Crédito de fotos** — a foto do Pedro (e futuras) é de outro fotógrafo; quando a banda mandar o @, ajustar o `.m-credit` em "Membros" (hoje só cita @manufaverofoto).
 - **Domínio próprio** (ex.: `piteira.com.br`, ~R$40/ano no Registro.br) — depois atualizar `og:url`, `og:image` e os URLs do JSON-LD em `index.html`.
 - **Depoimentos** — pedir 1 frase p/ Loud Fest, Haoma e Bar do Castelo; adicionar em "Ao Vivo" com faixa de números (shows/cidades).
 - **Agenda / próximos shows** — quando houver datas; fallback "últimos palcos" quando vazia.

@@ -14,7 +14,6 @@ Ao trocar/adicionar fotos, manter o `.m-credit` (seção "Membros") de acordo.
 
 ## TODO (decididos em 2026-07, aguardando material/ação)
 - **Vídeo ao vivo** — maior alavanca de conversão p/ contratantes. Aguardando a banda gravar de novo (troca de baixista em 2026-07).
-- **Domínio próprio** (ex.: `piteira.com.br`, ~R$40/ano no Registro.br) — depois atualizar `og:url`, `og:image` e os URLs do JSON-LD em `index.html`.
 - **Depoimentos** — pedir 1 frase p/ Loud Fest, Haoma e Bar do Castelo; adicionar em "Ao Vivo" com faixa de números (shows/cidades).
 - **Agenda / próximos shows** — quando houver datas; fallback "últimos palcos" quando vazia.
 - **Painel Cloudflare (sem código)**: ativar *Web Analytics* e o *managed robots.txt* (bloqueia crawlers de IA; NÃO criar robots.txt no repo — o gerenciado da Cloudflare sobrescreve na borda).
